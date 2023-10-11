@@ -31,6 +31,9 @@
             txtDebug = new TextBox();
             button1 = new Button();
             txtInput = new TextBox();
+            txtInput2 = new TextBox();
+            button2 = new Button();
+            button3 = new Button();
             SuspendLayout();
             // 
             // txtDebug
@@ -63,11 +66,43 @@
             txtInput.TabIndex = 2;
             txtInput.Text = "input";
             // 
+            // txtInput2
+            // 
+            txtInput2.Location = new Point(27, 195);
+            txtInput2.Multiline = true;
+            txtInput2.Name = "txtInput2";
+            txtInput2.Size = new Size(301, 91);
+            txtInput2.TabIndex = 4;
+            txtInput2.Text = "input2";
+            // 
+            // button2
+            // 
+            button2.Location = new Point(29, 303);
+            button2.Name = "button2";
+            button2.Size = new Size(299, 29);
+            button2.TabIndex = 3;
+            button2.Text = "ToChars";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(139, 347);
+            button3.Name = "button3";
+            button3.Size = new Size(94, 29);
+            button3.TabIndex = 5;
+            button3.Text = "loadCX";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button3);
+            Controls.Add(txtInput2);
+            Controls.Add(button2);
             Controls.Add(txtInput);
             Controls.Add(button1);
             Controls.Add(txtDebug);
@@ -83,5 +118,8 @@
         private TextBox txtDebug;
         private Button button1;
         private TextBox txtInput;
+        private TextBox txtInput2;
+        private Button button2;
+        private Button button3;
     }
 }
